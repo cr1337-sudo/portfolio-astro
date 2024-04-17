@@ -1,0 +1,60 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Feb 2023 - Present",
+    title: "Fullstack Engineer",
+    company: "ShareCRF",
+    description: `Participated in a team responsible for the maintainability and ongoing
+development of new features that would be used by hundreds of users.
+Contributed to designing, developing, testing, and maintaining software
+solutions. My responsibilities included analyzing requirements, creating
+software architectures, coding, conducting quality tests, and resolving technical
+issues to ensure efficient and reliable functionality.`,
+  },
+  {
+    date: "Jan 2022 - Feb 2023",
+    title: "Fullstack Engineer",
+    company: "WeProject",
+    description:
+      `Collaborated with planning, developing and implementing the company’s main
+product. Developed an algorithm that optimized client-side and server-side run time,
+notably improving user experience and reducing test complexity.
+Actively involved in decision making related to infrastructure, design and
+backend implementations.`
+  },
+  {
+    date: "Sep 2021 - Feb 2023",
+    title: "Backend Professor & Mentor",
+    company: "CoderHouse",
+    description:
+      `Monitored the performance of more than three hundred students and
+accompanied their professional formation with complementary classes and
+feedback to assignments.
+Extended my knowledge of the workplace to my classes, which introduced my
+students to an accurate productive environment.`
+  },
+  {
+    date: "Oct 2020 - Jan 2022",
+    title: "Fullstack Developer",
+    company: "Alpha Development",
+    description:
+      `Participated in a team in charge of migrating Wordpress applications to
+more customizable, high demand technologies.
+Helped on the designing, developing and implementing of production ready
+databases.
+Ideated and established a standard for developing back offices— this optimized
+our working time and allowed us to deliver higher quality software.`
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
